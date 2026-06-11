@@ -15,6 +15,8 @@ Many high school graduates face decision paralysis when choosing their universit
 
 ## 🛠️ Tech Stack
 * **UI/UX Design:** Stitch 
-* **Frontend Development:** HTML5, CSS3, JavaScript  
+* **Frontend Development:** HTML5, CSS3, JavaScript
+* **Backend Development:** Go 
+
 
 
