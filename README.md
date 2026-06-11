@@ -7,5 +7,7 @@ Many high school graduates face decision paralysis when choosing their universit
 ## 🚀 Key Features
 * **Interest Assessment:** Tools to help students identify their strengths and preferences.
 * **Course Mapping:** Direct linking between career interests and matching university programs.
-* **Structured Pathways:** A step-by-step exploration journey to reduce overwhelming choices.
+* **Structured Pathways:** A step-by-step exploration journey to reduce overwhelming choices.  
 
+
+---
