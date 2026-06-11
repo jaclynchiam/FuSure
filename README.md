@@ -6,7 +6,7 @@ FuSure is a web-based course exploration platform designed to help high school g
 ![Homepage Preview 2](Image/HomepagePreview2.png)
 
 ## 💡 The Problem & Solution
-Many high school graduates face decision paralysis when choosing their university paths. Developed as our prototype for **Startup Foundry**, FuSure bridges this gap by acting as a digital guidance counselor that streamlines career and major matching.
+Many high school graduates face decision paralysis when choosing their university paths. Developed as our prototype for **Startup Foundry Subject**, FuSure bridges this gap by acting as a digital guidance counselor that streamlines career and major matching.
 
 ## 🚀 Key Features
 * **Interest Assessment:** Tools to help students identify their strengths and preferences.
