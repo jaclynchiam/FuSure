@@ -1,0 +1,240 @@
+<!--done-->
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chat with AICourseBuddy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2547f4",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101322",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white">
+<div class="flex flex-col h-screen w-full">
+
+    <header class="w-full border-b border-solid border-white/10 dark:border-[#222949] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm"> 
+   
+   <!---    <header class="fixed top-0 z-50 w-full border-b border-solid border-white/10 dark:border-[#222949] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm"> -->
+        
+        <div class="flex items-center justify-between whitespace-nowrap w-full max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-16 py-3">
+            
+            <div class="flex items-center gap-4 text-black dark:text-white flex-shrink-0">
+                <div class="size-6 text-primary">
+                    <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+             <a href="newhomePage.html"><h2 class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">FuSure</h2> </a>
+            </div>
+                  
+ <!--top nav bar-->
+ <div class="hidden lg:flex items-center ml-auto">
+
+    <nav class="flex items-center gap-6">
+
+      <div class="relative" id="course-guides-dropdown">
+        <button class="flex items-center text-black dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary focus:outline-none" aria-expanded="false" aria-controls="dropdown-menu-courses">
+          Course Guides
+          <span class="material-symbols-outlined text-base ml-1 transition-transform" id="dropdown-icon">expand_more</span>
+        </button>
+        <!-- Updated dropdown menu with bigger background -->
+        <div id="dropdown-menu-courses" class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-60 rounded-xl shadow-lg bg-card-light dark:bg-card-dark ring-1 ring-black/10 dark:ring-white/10 z-50 hidden">
+          <div class="py-3"> <!-- increased vertical padding -->
+            <a href="courseChoice.html" class="block px-4 py-3 text-sm text-black dark:text-white hover:bg-background-light dark:hover:bg-[#222949] rounded-xl mx-2 transition-colors">
+              <span class="material-symbols-outlined text-sm align-middle mr-2">search</span>Explore Courses
+            </a>
+            <a href="courseinformation.html" class="block px-4 py-3 text-sm text-black dark:text-white hover:bg-background-light dark:hover:bg-[#222949] rounded-xl mx-2 transition-colors">
+              <span class="material-symbols-outlined text-sm align-middle mr-2">info</span>Detailed Course Information
+            </a>
+            <a href="compareCourse.html" class="block px-4 py-3 text-sm text-black dark:text-white hover:bg-background-light dark:hover:bg-[#222949] rounded-xl mx-2 transition-colors">
+              <span class="material-symbols-outlined text-sm align-middle mr-2">compare_arrows</span>Compare Courses
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="test.html">Interest Test</a>
+      <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="projects.html">Explore Projects</a>
+      <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="community.html">Community</a>
+    </nav>
+
+    <a class="flex items-center justify-center gap-2 text-white font-bold text-sm leading-normal bg-primary rounded-full h-9 px-4 hover:opacity-90 flex-shrink-0 ml-6" href="courseBuddy.html">
+      <span class="truncate">Chat with AICourseBuddy 🤖</span>
+    </a>
+  </div>
+
+            <div class="flex items-center gap-2 flex-shrink-0 ml-6">
+                <button class="hidden sm:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-white/10 dark:bg-[#222949] text-black dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-white/20 dark:hover:bg-[#313a68]">
+                    <span class="truncate">Login</span>
+                </button>
+                <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 flex-shrink-0">
+                    <span class="truncate">Sign Up</span>
+                </button>
+                <button class="lg:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-white/10 dark:bg-[#222949] text-black dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                    <span class="material-symbols-outlined text-base">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+<div class="flex flex-1 overflow-hidden">
+<aside class="flex flex-col w-80 bg-[#161a31] p-4 shrink-0">
+<div class="flex items-center gap-3 mb-6 px-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Abstract blue and purple gradient" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpFBXVZeEjB2jYI8mbxJQaLinthr61enznnyuil42dmTnaGkGzegMnGD8ueJTFv6aaF95DO1vo4afjrRr3HaYa2FKIutFCIpB4MPzEoXKA_uSDourDAPX6RLm5S9fvZypBW4eB6nyVUevRlU1T_M3GWFgsYXHm193xvUksaC9k6KSQSWo8g3aopTALx5S3wzIJJ2LLGXTVbr0tkriAMs-Dv92nRsw1lwGuMUXujt5ZpbP0uoZDGeDr0jzbGthHz5YSAKaIKEb14p0");'></div>
+<div class="flex flex-col">
+<h1 class="text-white text-base font-medium leading-normal">AICourseBuddy</h1>
+<p class="text-[#909acb] text-sm font-normal leading-normal">Your Personal Course Guides</p>
+</div>
+</div>
+<div class="relative mb-4">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#909acb]">search</span>
+<input class="w-full bg-[#222949] border-none rounded-lg pl-10 pr-4 py-2 text-white placeholder-[#909acb] text-sm focus:ring-2 focus:ring-primary/50" placeholder="Find a Course Buddy..." type="text"/>
+</div>
+<nav class="flex flex-col gap-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-[#222949]" href="#">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1, 'wght' 400;">engineering</span>
+<p class="text-white text-sm font-medium leading-normal">Engineering Buddy</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#222949]/50 transition-colors" href="#">
+<span class="material-symbols-outlined text-white">code</span>
+<p class="text-white text-sm font-medium leading-normal">CompSci Buddy</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#222949]/50 transition-colors" href="#">
+<span class="material-symbols-outlined text-white">business_center</span>
+<p class="text-white text-sm font-medium leading-normal">Business Buddy</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#222949]/50 transition-colors" href="#">
+<span class="material-symbols-outlined text-white">palette</span>
+<p class="text-white text-sm font-medium leading-normal">Arts Buddy</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#222949]/50 transition-colors" href="#">
+<span class="material-symbols-outlined text-white">biotech</span>
+<p class="text-white text-sm font-medium leading-normal">Medicine Buddy</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#222949]/50 transition-colors" href="#">
+<span class="material-symbols-outlined text-white">gavel</span>
+<p class="text-white text-sm font-medium leading-normal">Law Buddy</p>
+</a>
+</nav>
+<div class="mt-auto pt-4 border-t border-[#222949]">
+<div class="flex items-center gap-3 px-3 py-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture with a colorful background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkn9r7hEyedrz3qGsLLMOEWciTuMYQVDeigonoQrbnl77UCtldwY3bFWRqmddtM5W47uFdMqipbdEZTNOqVCjlh4YCwHCRX_ow8InD3K6_Yyk7F2RXF3jhwcHi98tFAjAzkYlSggzghHr4ZIlw35LTKrjjcVUZl2XdZiA0w_hCjYFc1mlxgMHGZ7yt7UXwVgBkaD7cZt71DiEII_7aM1UsDGBnZWnRQlg4NaL3sONnbzK86Aa9a8JP7ARhTLnWNIcmkTdPfD9Jnf8");'></div>
+<div class="flex flex-col">
+<p class="text-white text-sm font-medium leading-normal">Alex Doe</p>
+<p class="text-[#909acb] text-xs font-normal leading-normal">High School Graduate</p>
+</div>
+<button class="ml-auto text-white">
+<span class="material-symbols-outlined">logout</span>
+</button>
+</div>
+</div>
+</aside>
+<main class="flex flex-1 flex-col bg-background-light dark:bg-background-dark">
+<header class="flex items-center gap-4 px-6 min-h-[72px] py-2 justify-between border-b border-gray-200 dark:border-[#161a31] shrink-0">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" data-alt="EngiBot avatar, a gear icon on a gradient background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQteibg77wG5-wwz35m_9stdtbFdjW2LwiCR3NLxR-D2je7HxuwQw3FD07Gxqthwi7SVx0JI3ZwCyBzp5iGoFLQTEFyNOW-W2ZZCJkdH8nHYP0Tq4ihrUQEB6KkM8iHjbiq_J20O11pWb77oQtfBGtNpPST9v6orPjjOjQb2OR7-atoCnYIttcEYIfY_G-Y7LMR5bGdSDuqPhywm8pih2Zjr3s6qD6y9yeUdZlkI1cb0Y9Ce9Sqs5k34Z2HbKmk5MzBCmHRiC5_uQ");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Engineering Buddy</p>
+<p class="text-gray-500 dark:text-[#909acb] text-sm font-normal leading-normal">Your guide to the world of Engineering</p>
+</div>
+</div>
+<button class="shrink-0 text-gray-500 dark:text-white">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</header>
+<div class="flex-1 overflow-y-auto p-6">
+<div class="flex flex-col gap-6">
+<div class="flex items-end gap-3 self-start max-w-2xl">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0" data-alt="EngiBot avatar, a gear icon on a gradient background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCk2H317rRZaLUqZXmP2jUDf6vfg6zATjux0NBjKZEh4Xw_nY1mLj7O-qQWU49qcRewVa-Y6OG1jNteN4iCDt5YaykH7-N15g9Q0feCd3D3sygvFOaJroG-RnixurJiSAEivkiAoqfcOBGtNqSrvRVQiYqgxvd97tsqEBwk-IwNcGfQDijhLo50lFkP8y3mzTx1gSpYwMOjcYF9ala-llfStxecle9NYPBvBIjMw6HetyufyWPvTx_KdCJbkKu_2fonOn7EfHkEYyA");'></div>
+<div class="flex flex-1 flex-col gap-1 items-start">
+<p class="text-gray-500 dark:text-[#909acb] text-[13px] font-normal leading-normal">Engineering Buddy</p>
+<div class="text-base font-normal leading-normal flex rounded-xl rounded-bl-none px-4 py-3 bg-white dark:bg-[#222949] text-gray-800 dark:text-white">
+<p>Hi there! I'm your Engineering Buddy. I can help you explore this exciting field. To get started, you can ask me about different specializations, career paths, or just tell me what subjects you enjoy!</p>
+</div>
+</div>
+</div>
+<div class="flex items-end gap-3 self-end max-w-2xl">
+<div class="flex flex-1 flex-col gap-1 items-end">
+<p class="text-gray-500 dark:text-[#909acb] text-[13px] font-normal leading-normal text-right">You</p>
+<p class="text-base font-normal leading-normal flex rounded-xl rounded-br-none px-4 py-3 bg-primary text-white"> What subjects will I study in Mechanical Engineering? </p>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0" data-alt="User profile picture with a colorful background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkGw5f64Og5VUZQBQgNA4scB1H3y07mn15qBkRTzTd5xnVArvRRYswTitapmksLbrV9fwFNX4Tm2RLZIOSFE8HgtxI-YceN1Qi-hUBY8DLw3tvvYwNF2GqEGMjWXp98cCi98Dh1OKQRUiQMofY0-1gQLcuY6BMN7pLIVHRJkRW9hPm3AYcLwLutxpfp69u-47dkzZ2E_NfBcT0NPMttL7PwkWr2v0qfL9C0zCYN6BSMh26JsbWB9A7cAZX-xidheO2x8BfREZT8js");'></div>
+</div>
+<div class="flex items-end gap-3 self-start max-w-2xl">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0" data-alt="EngiBot avatar, a gear icon on a gradient background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvUctqVwuSnQEQz3mjJ8RmGrfQgVXRZ-4_w_SgpODlFb1HbG03lXS5aKkFqtfJFzlDMNHmNRkQmpTZ33RCyBCiUaOAqfTI56ex92mBkyeBdmVBG4GqPq2axQ-rCXeXqeQfquoltzVHOZ_cgL7pfcwzOjrTxp4ia6lms2DltIQOOqgKzzVSQgmCtUJwYeS_7mX0NoLpGnoeLPlSLEgsBT7QnlkPVtuGLtpjvXXM_UyMuvJp0ChEAJFp9PaF9VE6nJBO3QuuHlKfkyc");'></div>
+<div class="flex flex-1 flex-col gap-2 items-start">
+<p class="text-gray-500 dark:text-[#909acb] text-[13px] font-normal leading-normal">Engineering Buddy</p>
+<div class="text-base font-normal leading-normal flex flex-col gap-2 rounded-xl rounded-bl-none px-4 py-3 bg-white dark:bg-[#222949] text-gray-800 dark:text-white">
+<p>Great question! In Mechanical Engineering, you'll dive into core subjects like:</p>
+<ul class="list-disc list-inside space-y-1">
+<li><strong>Thermodynamics:</strong> The study of heat and energy.</li>
+<li><strong>Fluid Mechanics:</strong> How liquids and gases behave.</li>
+<li><strong>Statics &amp; Dynamics:</strong> The study of forces on objects.</li>
+<li><strong>Materials Science:</strong> Understanding the properties of different materials.</li>
+</ul>
+<p>This foundation prepares you for exciting fields like robotics, automotive design, and aerospace!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0 mt-auto">
+<div class="flex gap-3 mb-4 overflow-x-auto pb-2">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222949] px-4 hover:bg-gray-200 dark:hover:bg-[#2f3861] transition-colors">
+<p class="text-gray-800 dark:text-white text-sm font-medium leading-normal">What are the job prospects?</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222949] px-4 hover:bg-gray-200 dark:hover:bg-[#2f3861] transition-colors">
+<p class="text-gray-800 dark:text-white text-sm font-medium leading-normal">Compare this to Civil Engineering</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222949] px-4 hover:bg-gray-200 dark:hover:bg-[#2f3861] transition-colors">
+<p class="text-gray-800 dark:text-white text-sm font-medium leading-normal">Tell me a fun fact!</p>
+</button>
+</div>
+<div class="relative">
+<input class="w-full bg-white dark:bg-[#222949] border border-gray-200 dark:border-transparent rounded-lg pl-4 pr-12 py-3 text-gray-800 dark:text-white placeholder-gray-400 dark:placeholder-[#909acb] focus:ring-2 focus:ring-primary/50" placeholder="Ask about career paths..." type="text"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-primary rounded-lg text-white hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+<script src="dropdown.js"></script>
+
+</body></html>
