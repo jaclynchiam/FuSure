@@ -9,5 +9,3 @@ Many high school graduates face decision paralysis when choosing their universit
 * **Course Mapping:** Direct linking between career interests and matching university programs.
 * **Structured Pathways:** A step-by-step exploration journey to reduce overwhelming choices.
 
-## 🧑‍💻 My Role & Contributions
-* **Frontend/Backend Implementation:** Developed the core web structure, user interface, and logic to ensure a smooth user flow for students navigating the platform.
